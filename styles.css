@@ -1,5 +1,7 @@
 @font-face {
   font-family: 'Inter';
+  font-style: normal;
+
   src: local(''),
     url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format("truetype");
 }
@@ -39,12 +41,14 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-primary);
   font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
   text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 1.2rem;
 }
 
 /*
@@ -93,7 +97,7 @@ h6 {
 main {
   background-color: var(--color-secondary);
   width: 100%;
-  max-width: 25rem;
+  max-width: clamp(15rem, 23rem, 23rem);
   padding: 1.5rem;
   border-radius: 1rem;
   
@@ -154,6 +158,9 @@ a {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 0 auto;
+  color: var(--color-secondary);
+  padding: 1rem;
 }
 
 .attribution a {
